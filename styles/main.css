@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --mainTextColor:#000;
+    --secondaryTextColor:rgb(51 51 51);
+    --mainLinkColor:#0da2b8;
+    --mainBorderColor:rgb(218, 218, 218);
+    --mainBgColor:rgb(249, 250,251);
+}
+
+.darkmode{
+    --mainTextColor:#fff;
+    --secondaryTextColor:#adb0b1;
+    --mainLinkColor:rgb(30, 190,214);
+    --mainBorderColor:#2b3031;
+    --mainBgColor:#131415;
+}
+
+*{
+    font-family: "Readex Pro";
+    line-height: 1.5 em;
+    box-sizing: border-box;
+    color: var(--mainTextColor);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--mainBgColor);
+}
+
+p,span,li{
+    color:var(--secondaryTextColor);
+    font-size: 1em;
+}
+
+a{
+    text-decoration: none;
+    color: var(--mainLinkColor);
+    font-weight: 500;
+}
+
+li{
+    line-height: 1.9em;
+}
+
+#container--main{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section--page {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.section--page h2{
+    text-transform: uppercase;
+}
+#wrapper--hero{
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}
+
+#user-name{
+    font-size: 3em;
+    line-height: 1em;
+}
+
+#bio, a{
+    font-weight: 300;
+}
+
+#profile-pic{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+#email a{
+    color: var(--mainTextColor);
+}
+
+#socials--list{
+    display: flex;
+    justify-content:space-evenly;
+    column-gap: 1em;
+    flex-wrap: wrap;
+}
+
+#socials--list a {
+    color:var(--secondaryTextColor);
+    font-size:1em;
+    transition: ease-in-out 0.4s;
+}
+
+#socials--list a:hover{
+    color: var(--mainLinkColor);
+}
+
+#qualifications--list{
+    list-style: none;
+}
+
+#wrapper--technical__skills__items{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1em;
+    font-size: 0.9em;
+}
+
+.card--technical__skills{
+    border: 2px solid var(--mainBorderColor);
+    padding: 0.5em 1em;
+    border-radius: 10px;
+}
+
+.card--technical__skills:hover{
+    background-color:#131415;
+    cursor: pointer;
+    transition: ease-in-out 0.4s;
+}
+
+.card--technical__skills span:hover{
+    color: #adb0b1;
+}
+
+#soft__skills--list{
+    list-style: none;
+}
+
+.line-break{
+    background-color: var(--mainBorderColor);
+    height: 1px;
+}
+.certificates--history{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-left: 1em;
+}
+
+.certificates--history strong {
+    font-style: italic;
+}
+
+.card--project{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-top: 1px solid var(--mainBorderColor);
+}
+
+.card--project a{
+    color: var(--mainTextColor);
+    transition: 0.3s;
+}
+
+.card--project a:hover{
+    color: rgb(30, 190,214);
+
+}
+
+#scroll-to-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    position:fixed;
+    bottom: 1em;
+    right: 0.5em;
+    border:none;
+    border-radius: 50%;
+    background-color: rgb(190, 182, 68);
+    width:2.3em;
+    height: 2.3em;
+    font-size: 1.3em;
+    cursor:pointer;
+}
+
+@media(max-width:600px) {
+    #wrapper--hero{
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    h1,h2{
+        text-align: center;
+    }
+
+    #profile-pic{
+        width: 200px;
+        height: 200px;
+    }
+
+    .section--page{
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    .certificates--history{
+        padding: 0;
+    }
+
+    #theme-switch{
+        top: 0;
+        right: 0;
+        opacity: 0.7;
+    }
+
+    #scroll-to-top{
+        bottom: 0;
+        right: 0.5em;
+        opacity: 0.7;
+    }
+}
+
+#project--section{
+    list-style: none;
+}
+
+#project--title{
+    text-transform: uppercase;
+}
