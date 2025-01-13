@@ -138,6 +138,10 @@ li{
     height: 1px;
 }
 
+#certificates--wrapper ul{
+    list-style: none;
+}
+
 .certificates--history{
     margin-top: 1em;
     margin-bottom: 1em;
