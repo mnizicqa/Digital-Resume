@@ -116,7 +116,7 @@ li{
 .card--technical__skills{
     border: 2px solid var(--mainBorderColor);
     padding: 0.5em 1em;
-    border-radius: 40px;
+    border-radius: 20px;
 }
 
 .card--technical__skills:hover{
